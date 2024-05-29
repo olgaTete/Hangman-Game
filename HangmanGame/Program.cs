@@ -7,7 +7,7 @@ namespace HangmanGame
         static void Main(string[] args)
         {
             string[] words = { "horse", "chicken", "hen", "pig", "sheep", "cow", "goat", "elephant", "monkey", "snake", "tiger", "lion", "giraffe", "rabbit", "dog" };
-            string word = words[new Random().Next(0, words.Length)];
+            string word = words[new Random().Next(words.Length)];
             string guessed = "";
             string allLetters = "";
             int tries = 10;
